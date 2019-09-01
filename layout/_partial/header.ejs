@@ -26,10 +26,10 @@
       </nav>
       <div id="search-form-wrap">
         <!-- <%- search_form({button: '&#xF002;'}) %> -->
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+        <form action="//cn.bing.com/search" method="get" accept-charset="UTF-8" class="search-form">
           <input type="search" name="q" class="search-form-input" placeholder="<%= __('search') %>">
           <button type="submit" class="search-form-submit"></button>
-          <input type="hidden" name="sitesearch" value="http://yoursite.com">
+          <input type="hidden" name="sitesearch" value="<%= __('url') %>">
         </form>
       </div>
     </div>
