@@ -92,7 +92,7 @@ All of them are enabled by default. You can edit them in `widget` setting.
 
 ### Requirements
 
-- [Grunt] 0.4+
+- [Grunt] 1.0.4
 - Hexo 2.4+
 
 ### Grunt tasks
