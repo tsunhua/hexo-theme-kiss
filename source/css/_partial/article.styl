@@ -30,7 +30,7 @@
 
 .article-title
   text-decoration: none
-  font-size: 2em
+  font-size: 1.5em
   font-weight: bold
   color: color-default
   line-height: line-height-title
@@ -43,7 +43,36 @@
   clearfix()
   color: color-default
   padding: 0 article-padding
-  overflow-x:scroll;
+  // hyphens
+  overflow-wrap: break-word
+  -webkit-hyphens: auto
+  -ms-hyphens: auto
+  hyphens: auto
+  -webkit-hyphens: auto;
+  -webkit-hyphenate-limit-before: 3;
+  -webkit-hyphenate-limit-after: 3;
+  -webkit-hyphenate-limit-chars: 6 3 3;
+  -webkit-hyphenate-limit-lines: 2;
+  -webkit-hyphenate-limit-last: always;
+  -webkit-hyphenate-limit-zone: 8%;
+
+  -moz-hyphens: auto;
+  -moz-hyphenate-limit-chars: 6 3 3;
+  -moz-hyphenate-limit-lines: 2;  
+  -moz-hyphenate-limit-last: always;
+  -moz-hyphenate-limit-zone: 8%;
+
+  -ms-hyphens: auto;
+  -ms-hyphenate-limit-chars: 6 3 3;
+  -ms-hyphenate-limit-lines: 2;
+  -ms-hyphenate-limit-last: always;   
+  -ms-hyphenate-limit-zone: 8%;
+
+  hyphens: auto;
+  hyphenate-limit-chars: 6 3 3;
+  hyphenate-limit-lines: 2;
+  hyphenate-limit-last: always;   
+  hyphenate-limit-zone: 8%;
   p, table
     line-height: line-height
     margin: line-height 0
@@ -69,13 +98,14 @@
     border: none
   table
     width: 100%
+    table-layout: fixed
     border-collapse: collapse
     border-spacing: 2px;
   th
     font-weight: bold
     border: 1px solid color-border
     padding: 8px 12px;
-    white-space: nowrap;
+    // white-space: nowrap;
     font-family: Lato-Bold;
     font-size: 18px;
     color: white;
