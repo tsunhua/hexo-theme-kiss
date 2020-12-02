@@ -19,6 +19,11 @@
           </p>
         <% } %>
       <% } else { %>
+        <!-- Table of Contents -->
+        <div id="toc" class="toc-article">
+            <strong class="toc-title">目錄</strong>
+            <%- toc(post.content,{list_number:true}) %>
+        </div>
         <%- post.content %>
       <% } %>
     </div>
