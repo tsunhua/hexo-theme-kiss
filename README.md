@@ -48,7 +48,6 @@ widgets:
 
 # Miscellaneous
 google_analytics:
-favicon: /favicon.png
 twitter:
 google_plus:
 ```
@@ -60,7 +59,6 @@ google_plus:
 - **sidebar** - Sidebar style. You can choose `left`, `right`, `bottom` or `false`.
 - **widgets** - Widgets displaying in sidebar
 - **google_analytics** - Google Analytics ID
-- **favicon** - Favicon path
 
 ## Features
 
