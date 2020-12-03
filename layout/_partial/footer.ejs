@@ -1,14 +1,22 @@
 <footer id="footer">
   <% if (theme.sidebar === 'bottom'){ %>
-    <%- partial('_partial/sidebar') %>
+  <%- partial('_partial/sidebar') %>
   <% } %>
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %><br>
-      <%= __('powered_by') %> 
-        <a href="https://hexo.io/" target="_blank">Hexo</a>&nbsp;&&nbsp;
-        <a href="https://github.com/" target="_blank">Github</a>
-      <br/>
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="創用 CC 授權條款"
+          style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+      <br />
+      <%= __('writed_by') %>
+      <a xmlns:cc="http: //creativecommons.org/ns#" href="https://linlshare.github.io/" property="cc:attributionName"
+        rel="cc:attributionURL"><%= config.author || config.title %>
+      </a>
+
+      <br>
+      <%= __('powered_by') %>
+      <a href="https://github.com/" target="_blank">Github</a>&nbsp;&&nbsp;
+      <a href="https://hexo.io/" target="_blank">Hexo</a>
+      <br />
 
       <span id="busuanzi_container_site_uv">
         <%= __('supported_by_uv') %><span id="busuanzi_value_site_uv"></span>
