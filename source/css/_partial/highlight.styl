@@ -1,6 +1,7 @@
 // https://github.com/chriskempson/tomorrow-theme
 highlight-background = #2d2d2d
 highlight-current-line = #393939
+highlight-line = #ffffff
 highlight-selection = #515151
 highlight-foreground = #cccccc
 highlight-comment = #999999
@@ -17,11 +18,11 @@ $code-block
   line-height: font-size * line-height
   white-space: pre-wrap
   word-wrap: break-word
-  background: #fff;
-  border: 1px solid #e5e5e5;
+  background: #2d2d2d;
+  // border: 2px solid highlight-blue;
   padding: 7px 15px;
-  border-radius: 2px;
-  text-shadow: 0 0 1px #fff;
+  // border-radius: 10px;
+  // text-shadow: 0 0 1px #fff;
   overflow: auto;
   position: relative;
   font-size: 0.93em;
@@ -44,6 +45,7 @@ $line-numbers
       text-shadow: none
       padding: 0
   .highlight
+    border-radius: 5px;
     @extend $code-block
     pre
       border: none
@@ -69,6 +71,7 @@ $line-numbers
       padding-right: 20px
     .line
       height: font-size * line-height
+      color: highlight-line
     .line.marked
       background: highlight-selection
   .gist
@@ -112,8 +115,9 @@ $line-numbers
 
 pre
   .comment
-  .title
     color: highlight-comment
+  .title
+    color: highlight-yellow
   .variable
   .attribute
   .tag
