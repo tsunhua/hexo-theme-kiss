@@ -32,6 +32,12 @@ $line-numbers
   font-size: 0.85em
 
 .article-entry
+  img
+    // 限制圖片的高度
+    max-height: 400px
+  p
+    // 解決列表有圖片或代碼時序號和內容不在同一行的問題
+    display: block
   pre, code
     font-family: font-mono
   code
