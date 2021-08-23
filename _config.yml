@@ -15,7 +15,7 @@ widgets:
 - category
 - tagcloud
 - qrcode
-- archive
+# - archive
 - recent_posts
 
 # display widgets at the bottom of index pages (pagination == 2)
