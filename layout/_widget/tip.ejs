@@ -2,6 +2,15 @@
     <h3 class="widget-title"><%= __('tip') %></h3>
     <div class="widget" style="min-height: 50px;">
         <img src="<%= config.tip_img %>" height="50px" style="float: left; margin-right: 10px" />
-        <div style="font-size:medium; color:palevioletred;padding-top: 16px;"><%= config.tip_text %></div>
+        <div style="font-size:medium; color:palevioletred;padding-top: 4px;">
+           <ul>
+                <% for (var i in config.tip_text){ %>
+                    <li>
+                        *
+                        <%= config.tip_text[i] %>
+                    </li>
+                <% } %>
+            </ul>
+        </div>
     </div>
 </div>
