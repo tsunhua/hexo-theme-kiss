@@ -38,12 +38,14 @@ $line-numbers
   p
     // 解決列表有圖片或代碼時序號和內容不在同一行的問題
     display: block
-  pre, code
+  pre
     font-family: font-mono
   code
-    background: color-background
-    text-shadow: 0 1px #fff
-    padding: 0 0.3em
+    // background: color-background
+    // text-shadow: 0 1px #fff
+    // padding: 0 0.3em
+    font-size: 12px;
+    color: #797baa;
   pre
     @extend $code-block
     code
