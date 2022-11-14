@@ -35,3 +35,8 @@ show_count: true
 google_analytics:
 gauges_analytics:
 twitter:
+
+search:
+  path: search.xml
+  field: post
+  content: true

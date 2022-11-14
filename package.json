@@ -9,5 +9,7 @@
     "grunt-git": "^1.1.0",
     "load-grunt-tasks": "^5.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "hexo-generator-search": "^2.4.3"
+  }
 }

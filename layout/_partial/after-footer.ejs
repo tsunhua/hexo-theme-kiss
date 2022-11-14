@@ -15,6 +15,14 @@
 <% } %>
 
 <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="<%- config.root %>js/search.js"></script> 
+<% if (config.search) { %>
+  <script type="text/javascript" id="local.search.active">
+    var inputArea       = document.querySelector("#local-search-input");
+    inputArea.onclick   = function(){ getSearchFile(); this.onclick = null }
+    inputArea.onkeydown = function(){ if(event.keyCode == 13) return false }
+  </script>
+<% } %>
 
 <% if (theme.fancybox){ %>
   <%- css('fancybox/jquery.fancybox') %>
