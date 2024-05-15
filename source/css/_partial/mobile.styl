@@ -8,12 +8,28 @@
     background: color-mobile-nav-background
     border-right: 1px solid #fff
 
-@media mq-mobile
   .mobile-nav-link
     display: block
     color: color-grey
     text-decoration: none
     padding: 15px 20px
     font-weight: bold
-    &:hover
-      color: #fff
+    transition: all 0.3s
+  
+  .mobile-nav-link:hover,
+  .mobile-nav-link:focus-within
+    color: #fff
+  
+  .submenu
+    display: none
+    position: absolute
+    width: 100%
+    background: color-mobile-nav-background
+
+  .submenu a
+    display: block
+    font-size: 90%
+    padding: 8px 30px
+
+  .mobile-nav-link.active > .submenu
+    display: block

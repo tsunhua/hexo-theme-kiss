@@ -1,5 +1,16 @@
 <nav id="mobile-nav">
-  <% for (var i in theme.menu){ %>
-    <a href="<%- url_for(theme.menu[i]) %>" class="mobile-nav-link"><%= i %></a>
+  <% for (var item in theme.menu) { %>
+    <% if (typeof theme.menu[item] === 'string') { %>
+      <a class="mobile-nav-link mobile-nav-main" href="<%- url_for(theme.menu[item]) %>"><%= item %></a>
+    <% } else { %>
+      <div class="mobile-nav-main" data-submenu="<%= item %>">
+        <a href="#" class="mobile-nav-link"><%= item %></a>
+        <div class="submenu" id="submenu_<%= item %>">
+          <% for (var subitem in theme.menu[item]) { %>
+            <a class="mobile-nav-link" href="<%- url_for(theme.menu[item][subitem]) %>"><%= subitem %></a>
+          <% } %>
+        </div>
+      </div>
+    <% } %>
   <% } %>
 </nav>

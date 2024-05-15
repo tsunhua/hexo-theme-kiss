@@ -220,3 +220,38 @@ $nav-link
     left: -30px
     color: #999
     cursor: pointer
+
+#main-nav {
+  position: relative;
+}
+
+#main-nav .main-nav-link {
+  position: relative;
+}
+
+#main-nav .submenu {
+  display: none;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 16px;
+  min-width: 200px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+#main-nav .submenu a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  padding: 10px 10px;
+}
+
+#main-nav .submenu a:hover {
+  background-color: #f9f9f9;
+}
+
+#main-nav .main-nav-link:hover .submenu {
+  display: block;
+}
