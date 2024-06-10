@@ -30,6 +30,9 @@
   <% if (config.favicon){ %>
     <link rel="shortcut icon" href="<%- config.favicon %>" />
   <% } %>
+  <% if (config.favicon_app_touch){ %>
+    <link rel="apple-touch-icon" sizes="180x180" href="<%- config.favicon_app_touch %>">
+  <% } %>
   <% if (config.highlight.enable){ %>
     <link href="//fonts.font.im/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   <% } %>

@@ -18,6 +18,10 @@ sidebar: right
 # - qrcode
 # - archive
 
+# Favicon
+favicon: "favicon.ico"
+favicon_app_touch: "apple-touch-icon.png"
+
 # Banner
 banner:
 
