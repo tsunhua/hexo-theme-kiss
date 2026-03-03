@@ -22,7 +22,6 @@
 
 #header-inner
   position: relative
-  overflow: hidden
 
 #banner
   position: absolute
@@ -231,14 +230,16 @@ $nav-link
 
 #main-nav .submenu {
   display: none;
+  position: absolute;
   top: 100%;
   left: 0;
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 4px;
-  margin-top: 16px;
+  margin-top: -2px;
   min-width: 200px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
 }
 
 #main-nav .submenu a {
